@@ -1,0 +1,122 @@
+.home {
+  position: relative;
+  background-color: #111213;
+  background-image: url("../../img/Bg_home_down.jpg");
+  max-width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.911);
+  margin-bottom: 2px;
+}
+
+.containerHome {
+  position: relative;
+  margin: 90px auto 20px auto;
+  top: 0%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  max-width: 1400px;
+  max-height: 750px;
+}
+
+.home__wrapper {
+  position: absolute;
+  background-image: url("../../img/Bg_home_container.jpg");
+  background-size: cover;
+  border-radius: 20px 20px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.255);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.home__wrapper__main-photo {
+  position: absolute;
+  top: 0;
+  right: 6%;
+  height: 100%;
+  width: auto;
+}
+
+.home__wrapper__lines-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+}
+
+.home__wrapper__inscription-logo {
+  position: absolute;
+  left: 5%;
+  top: 19%;
+  height: auto;
+  max-width: 420px;
+  filter: drop-shadow(5px 4px 2px rgba(0, 0, 0, 0.5));
+}
+
+.home__title {
+  position: absolute;
+  bottom: 20%;
+  left: 4%;
+  padding: 20px;
+  font-family: "Gruppo", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.home-btn__link {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  color: #dee7ebec;
+  gap: 20px;
+}
+
+.home__btn {
+  max-width: 400px;
+  display: inline-block;
+  justify-content: space-between;
+  top: 80%;
+  bottom: 10%;
+  left: 15%;
+  border-radius: 28px;
+}
+
+.home-btn__icon-arrow {
+  width: 40px;
+  height: 40px;
+  color: #dde8e8;
+}
+
+@media (max-width: 399px) and (min-width: 180px) {
+  .home__wrapper__main-photo {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    height: 85%;
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .home__btn {
+    max-width: 450px;
+    top: 80%;
+    left: 21%;
+  }
+
+  .home__wrapper__inscription-logo {
+    left: 5%;
+    top: 19%;
+    height: auto;
+    max-width: 300px;
+  }
+}

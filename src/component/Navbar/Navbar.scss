@@ -1,0 +1,113 @@
+@import "../../styles/main.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(218, 212, 212, 0.956);
+  padding: 20px 15px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.container-navbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 45px;
+  max-width: 1300px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+  font-size: 34px;
+  font-weight: 400;
+  font-family: "Dongle", sans-serif;
+  letter-spacing: 0.05rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list__link {
+  color: rgba(218, 212, 212, 0.956);
+}
+
+.nav-list__link--active {
+  position: relative;
+}
+
+.nav-list__link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $blue;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1002;
+    width: 30px;
+    height: 30px;
+  }
+  .mobile-btn-fit {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    background-color: #3d4c51 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1002;
+    width: 30px;
+    height: 30px;
+  }
+  .mobile-btn-fit {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .mobile-btn-fit {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nav-container {
+    padding: 0 3px;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../styles/main.scss";
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+  }
+  
+  .insta-icon, .fb-icon, .twit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    margin-bottom: 50px;
+
+}
+  
+  .insta-icon img, .fb-icon img, .twit-icon img {
+    width: 12px;
+    height: 12px;
+       
+  }
+ 
+  .insta-icon img:hover, .fb-icon img:hover, .twit-icon img:hover {
+    filter: drop-shadow(0px 0px 8px rgba(231, 225, 225, 0.788));
+       
+  }
+
+
+
+  
+  .fb-icon::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 51px;
+    background-color: $blue;
+    margin: 0 auto;
+    top: 100px;
+     }
+
+  .insta-icon::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 51px;
+    background-color: $blue;
+    margin: 0 auto;
+    top: 24px;
+  }
+
+
+

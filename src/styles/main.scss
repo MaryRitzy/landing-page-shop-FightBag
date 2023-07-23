@@ -1,0 +1,67 @@
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sofia+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Fredoka:wght@400;500;700&family=Gantari:wght@400;500;700&family=Gruppo&family=Kumbh+Sans:wght@400;500&family=Mallanna&display=swap");
+
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Sofia Sans', sans-serif;
+
+/*font-family: 'Dongle', sans-serif;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Gantari', sans-serif;
+font-family: 'Gruppo', sans-serif;
+font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Mallanna', sans-serif;*/
+
+html,
+body {
+  font-family: "Sofia Sans", sans-serif;
+  //font-family: "Roboto", sans-serif;
+}
+//Colors:
+$gray: #364145;
+$lightgray: #465155;
+$darkgray: #1c1d1e;
+$red: #ca0236;
+$blue: #00ffff;
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    #26292a 0%,
+    #d7d2cc71 40%,
+    #364145 100%
+  );
+  color: #18191aec;
+  padding: 10px 30px 10px 30px;
+  font-family: "Sofia Sans", sans-serif;
+  border: 2px solid #00ffff;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 5px #eee;
+  z-index: 1000;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  margin: 90px auto 20px auto;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  max-width: 1400px;
+  max-height: 750px;
+  padding: 0;
+}

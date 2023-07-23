@@ -1,0 +1,161 @@
+@import "../../styles/main.scss";
+
+* {
+  user-select: none;
+}
+.carousel-size {
+  display: flexbox;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flexbox;
+}
+
+.carousel-button {
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(221, 221, 221, 0.321);
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+/*
+.carousel-prev-button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-widht: 420px){
+       
+       left: 45%;
+       bottom: 0;
+       transform: translateY(-10%);
+      // transform: translateY(-50%);
+      z-index: 1010;
+     }
+  }
+*/
+.carousel-prev-button {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (max-width: 590px) {
+    left: 15%;
+    bottom: 0;
+    top: 82%;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+
+  @media (max-width: 420px) {
+    left: 33%;
+    bottom: 0;
+    top: 84%;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+}
+
+.carousel-next-button {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (max-width: 590px) {
+    top: 82%;
+    right: 15%;
+    bottom: 0;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+  @media (max-width: 420px) {
+    top: 84%;
+    right: 33%;
+    bottom: 0;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+}
+
+.icon-Arrow-Right,
+.icon-Arrow-Left {
+  display: flex;
+  position: absolute;
+  font-size: 2rem;
+  border: 2px solid $blue;
+  border-radius: 50%;
+  padding: 3rem;
+  margin: 0;
+  color: $blue;
+  justify-content: center;
+  align-items: center;
+  max-width: 0.9rem;
+  max-height: 0.9rem;
+  @media (max-width: 680px) {
+    font-size: 1.3rem;
+    padding: 1.8rem;
+    max-width: 0.5rem;
+    max-height: 0.5rem;
+  }
+  @media (max-width: 420px) {
+    font-size: 1rem;
+    padding: 1.5rem;
+    max-width: 0.2rem;
+    max-height: 0.2rem;
+  }
+}
+
+.title-slider {
+  color: white;
+  font-size: 32px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+/*
+@media (max-widht: 420px) {
+  .carousel-prev-button {
+    position: relative;
+    top: 89%;
+    left: 45%;
+    bottom: 0;
+    transform: translateY(20%);
+    // transform: translateY(-50%);
+    z-index: 1010;
+  }
+
+  .carousel-next-button {
+    position: relative;
+    right: 45%;
+    bottom: 0%;
+    transform: translateY(20%);
+    //  transform: translateY(-50%);
+  }
+}*/
+  /*.icon-Arrow-Right,
+  .icon-Arrow-Left {
+    display: flex;
+    position: absolute;
+    font-size: 1rem;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0;
+    color: $blue;
+    justify-content: center;
+    align-items: center;
+    max-width: 0.4rem;
+    max-height: 0.4rem;
+  }*/

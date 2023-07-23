@@ -1,0 +1,219 @@
+@import "../../styles/main.scss";
+@import "../../styles/fontsProjectFB.scss";
+
+.about__wrapper {
+  position: relative;
+  background-color: #26292a;
+  background-image: url("../../img/Bg_about_down.jpg");
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.911);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0 0 2px 0;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.911);
+  margin-bottom: 2px;
+}
+
+.containerAbout {
+  position: relative;
+  margin: 90px auto 20px auto;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  max-width: 1400px;
+  max-height: 750px;
+  padding: 0;
+}
+.about__container {
+  position: absolute;
+  background-color: rgb(20, 7, 7);
+  background-image: url("../../img/Bg_about_container.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  border-radius: 20px 20px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.255);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0 15px 20px;
+  overflow: hidden;
+}
+
+.container__halfpageRight,
+.container__halfpageLeft {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0;
+}
+
+.container__halfpage__wrapperLeft {
+  position: relative;
+  width: 36rem;
+  height: 38rem;
+}
+
+@media (max-width: 1360px) {
+  .container__halfpageRight {
+    width: 54%;
+    height: 100%;
+  }
+  .container__halfpageLeft {
+    width: 46%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .container__halfpageRight {
+    width: 58%;
+    height: 100%;
+  }
+  .container__halfpageLeft {
+    width: 42%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .container__halfpageRight {
+    width: 59%;
+    height: 97%;
+  }
+  .container__halfpageLeft {
+    width: 41%;
+    height: 97%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container__halfpageRight {
+    width: 60%;
+    height: 97%;
+  }
+  .container__halfpageLeft {
+    width: 40%;
+    height: 95%;
+  }
+  .container__halfpage__wrapperLeft {
+    position: relative;
+    width: 36rem;
+    height: 33rem;
+  }
+  .sample-wrapper {
+    left: 18%;
+    width: 161px;
+    height: 161px;
+  }
+  .sample-wrapper2 {
+    top: 25%;
+    left: 42%;
+    width: 158px;
+    height: 158px;
+  }
+  .sample-wrapper3 {
+    top: 42%;
+    left: 16%;
+    width: 179px;
+    height: 179px;
+    z-index: 2;
+  }
+  .sample-wrapper5 {
+    width: 210px;
+    height: 210px;
+  }
+  .sample-wrapper4 {
+    top: 53%;
+    left: 46%;
+    width: 176px;
+    height: 176px;
+  }
+  .sample-wrapper6 {
+    top: 81%;
+    left: 52%;
+    width: 156px;
+    height: 154px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 920px) {
+  .about__container {
+    background-position: 60% 20%;
+  }
+  .container__halfpageRight {
+    width: 64%;
+    height: 97%;
+  }
+  .container__halfpageLeft {
+    width: 36%;
+    height: 97%;
+  }
+  .container__halfpage__wrapperLeft {
+    width: 32rem;
+    height: 34rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__container {
+    background-position: 60% 20%;
+  }
+  .container__halfpageRight {
+    width: 70%;
+    height: 97%;
+  }
+  .container__halfpageLeft {
+    width: 30%;
+    height: 97%;
+  }
+  .container__halfpage__wrapperLeft {
+    width: 32rem;
+    height: 34rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__container {
+    background-position: 70% 20%;
+  }
+}
+@media (max-width: 400px) {
+  .about__container {
+    background-position: 80% 20%;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 50px) {
+  .container__halfpageLeft,
+  .container__halfpage__wrapperLeft {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 50px) {
+  .container__halfpageRight,
+  .container__halfpage__wrapperRight {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 570px) and (min-width: 50px) {
+  .about__container {
+    padding: 15px 0 15px 5px;
+  }
+}
+
+@media (max-width: 497px) {
+  .diagram__scheme-container {
+    width: 100%;
+    height: 100%;
+  }
+}
