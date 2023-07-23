@@ -27,7 +27,7 @@ const HeaderPage = () => {
         </div>
 
         <button className="home__btn btn">
-          <a href="#" className="home-btn__link">
+          <a href="#section-Slider" className="home-btn__link">
             Твій стиль{" "}
             <img
               src="./image/arrow-blue.svg"

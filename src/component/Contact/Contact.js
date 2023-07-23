@@ -37,7 +37,7 @@ const Contact = () => {
               <div className="station__contact-icon icon-location-map"></div>
               <div className="station__contact-title">адреса</div>
               <div className="station__contact-text">
-                вулиця Благовісна, 170, Черкаси, Черкаська область, Украина,
+                вулиця Благовісна, 170, Черкаси, Черкаська область, Україна,
                 18000
               </div>
             </div>
