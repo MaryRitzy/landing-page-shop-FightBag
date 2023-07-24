@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import ScrollToTop from "../ScrolltoTop/ScrolltoTop3";
 import "./Footer.scss";
 import "../../styles/main.scss";
@@ -12,9 +13,7 @@ const Footer = () => {
           <div class="footer__about">
             <div class="footer__about__items-logo items-logo">
               <div class="items-logo__logo">
-                <a href="#">
-                  <img src="assets/images/logo-footer.svg" alt=""></img>
-                </a>
+                <img src="assets/images/logo-footer.svg" alt=""></img>
               </div>
               <div class="items-logo__text">
                 <p>Рюкзаки для чемпіонів</p>
@@ -23,64 +22,60 @@ const Footer = () => {
               </div>
             </div>
 
-<div className="footer__about__items-sm"> 
-<div class=" items-info">
-              <h2 class="footer__about__items__title">Quick Links</h2>
-              <ul class="footer__about__items__link">
-                <li>
-                  <a href="#" class="footer__about__items__link__text">
-                    Company
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="footer__about__items__link__text">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <Link
-                    to="/about"
-                    class="footer__about__items__link__text"
-                  >
-                    About
-                  </Link>
-                </li>
-              </ul>
+            <div className="footer__about__items-sm">
+              <div class=" items-info">
+                <h2 class="footer__about__items__title">Quick Links</h2>
+                <ul class="footer__about__items__link">
+                  <li>
+                    <a href="/" class="footer__about__items__link__text">
+                      Company
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/privacypolicy"
+                      class="footer__about__items__link__text"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <Link to="/about" class="footer__about__items__link__text">
+                      About
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="items-contact">
+                <h2 class="footer__about__items__title">Resources</h2>
+                <ul class="footer__about__items__link">
+                  <li>
+                    <Link
+                      to="/supportForm"
+                      class="footer__about__items__link__text"
+                    >
+                      Support
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/contact"
+                      class="footer__about__items__link__text"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <a href="/" class="footer__about__items__link__text">
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-
-            <div class="items-contact">
-              <h2 class="footer__about__items__title">Resources</h2>
-              <ul class="footer__about__items__link">
-                <li>
-                  <Link
-                    to="/supportForm"
-                    class="footer__about__items__link__text"
-                  >
-                    Support
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/contact"
-                    class="footer__about__items__link__text"
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <a href="#" class="footer__about__items__link__text">
-                    Terms
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-</div>
-
-         
-
-             {/*<!-- footer form -->*/}
+            {/*<!-- footer form -->*/}
             <div class="footer__about__items-form items-form">
               <h2 class="footer__about__items__title">Newsletter</h2>
               <div class="form-footer">
@@ -104,6 +99,7 @@ const Footer = () => {
                     href="https://www.facebook.com/FightBag.ua/"
                     title="Facebook"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon-facebook"
                   ></a>
                 </li>
@@ -112,6 +108,7 @@ const Footer = () => {
                     href="https://twitter.com/uideckHQ"
                     title="Twitter"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon-twitter-sm"
                   ></a>
                 </li>
@@ -120,6 +117,7 @@ const Footer = () => {
                     href="https://www.instagram.com/fightbag_ua/?hl=ru"
                     title="Instagram"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon-instagram"
                   ></a>
                 </li>
@@ -128,6 +126,7 @@ const Footer = () => {
                     href="https://www.youtube.com/@grizzlycherkassy9294"
                     className="icon-youtube"
                     title="Youtube"
+                    rel="noopener noreferrer"
                     target="_blank"
                   ></a>
                 </li>
@@ -139,19 +138,20 @@ const Footer = () => {
                 Designed and Developed by ©{" "}
                 <a
                   href="https://www.linkedin.com/in/maryna-atamas-b1a886234/"
-                  rel="nofollow"
+                  rel="noopener noreferrer"
                   className="text-copyright-author"
                   target="_blank"
                 >
                   Atamas
                 </a>{" "}
               </p>
-              
             </div>
           </div>
-                 </div>
-                 <div className="scrollTop"><ScrollToTop /></div>
-              </footer>
+        </div>
+        <div className="scrollTop">
+          <ScrollToTop />
+        </div>
+      </footer>
     </>
   );
 };

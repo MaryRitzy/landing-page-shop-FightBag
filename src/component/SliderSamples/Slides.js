@@ -19,6 +19,12 @@ import Slide18 from "../../assets/FotosSlider/type18.jpg";
 import Slide19 from "../../assets/FotosSlider/type19.jpg";
 import Slide20 from "../../assets/FotosSlider/type20.jpg";
 import Slide21 from "../../assets/FotosSlider/type21.jpg";
+import Slide22 from "../../assets/FotosSlider/type22.jpg";
+import Slide23 from "../../assets/FotosSlider/type23.jpg";
+import Slide24 from "../../assets/FotosSlider/type24.jpg";
+import Slide25 from "../../assets/FotosSlider/type25.jpg";
+import Slide26 from "../../assets/FotosSlider/type26.jpg";
+import Slide27 from "../../assets/FotosSlider/type27.jpg";
 
 
 
@@ -45,6 +51,12 @@ const slides = [
   { title: "model-FB_19", image: Slide19 },
   { title: "model-FB_20", image: Slide20 },
   { title: "model-FB_21", image: Slide21 },
+  { title: "model-FB_22", image: Slide22 },
+  { title: "model-FB_23", image: Slide23 },
+  { title: "model-FB_24", image: Slide24 },
+  { title: "model-FB_25", image: Slide25 },
+  { title: "model-FB_26", image: Slide26 },
+  { title: "model-FB_27", image: Slide27 },
 ];
 
 export default slides;

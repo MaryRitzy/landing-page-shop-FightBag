@@ -7,7 +7,7 @@ const Contact = () => {
     <div>
       <section className="section сontact">
         <div className="containerContact contact__wrapper">
-        <img
+          <img
             src="./image/lines_main.png"
             alt="lines2"
             class="header__lines-right"
@@ -98,7 +98,7 @@ const Contact = () => {
               ></Link>
             </div>
           </div>
-                 <div class="contact__map">
+          <div class="contact__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.420936538961!2d32.0565758!3d49.438760699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b7f9c1c71bb%3A0x961166ea401838fc!2z0YPQuy4g0JHQu9Cw0LPQvtCy0LXRgdGC0L3QsNGPLCAxNzAsINCn0LXRgNC60LDRgdGB0YssINCn0LXRgNC60LDRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgMTgwMDA!5e0!3m2!1sru!2ssk!4v1688803760015!5m2!1sru!2ssk"
               style={{
@@ -106,10 +106,11 @@ const Contact = () => {
                 height: "250px",
                 border: "0",
                 borderRadius: "20px",
-                allowfullscreen: "",
-                loading: "lazy",
-                referrerpolicy: "no-referrer-when-downgrade",
               }}
+              title="Google Maps"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
