@@ -1,19 +1,20 @@
 @font-face {
-  font-family: 'Contact_icons';
-  src:  url('./fontsProjectFB/Contact_icons.eot?a70o4q');
-  src:  url('./fontsProjectFB/Contact_icons.eot?a70o4q#iefix') format('embedded-opentype'),
-    url('./fontsProjectFB/Contact_icons.ttf?a70o4q') format('truetype'),
-    url('./fontsProjectFB/Contact_icons.woff?a70o4q') format('woff'),
-    url('./fontsProjectFB/Contact_icons.svg?a70o4q#Contact_icons') format('svg');
+  font-family: "Contact_icons";
+  src: url("./fontsProjectFB/Contact_icons.eot?a70o4q");
+  src: url("./fontsProjectFB/Contact_icons.eot?a70o4q#iefix")
+      format("embedded-opentype"),
+    url("./fontsProjectFB/Contact_icons.ttf?a70o4q") format("truetype"),
+    url("./fontsProjectFB/Contact_icons.woff?a70o4q") format("woff"),
+    url("./fontsProjectFB/Contact_icons.svg?a70o4q#Contact_icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Contact_icons' !important;
-  speak: never;
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "Contact_icons" !important;
+
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

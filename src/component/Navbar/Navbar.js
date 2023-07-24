@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link,useLocation } from 'react-router-dom';
 import "./Navbar.scss";
-//import CloseIcon from './CloseIcon';
 import BurgerIcon from './BurgerIcon';
 
 import Menu from '@mui/material/Menu';
@@ -11,10 +10,6 @@ import MenuItem from '@mui/material/MenuItem';
 const Navbar = () => {
    
   const location = useLocation();
-
-
-  {/*mobile */}
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -55,9 +50,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-    {/*mobile-btn */}
-
-        <div className='mobile-menu'>
+       <div className='mobile-menu'>
       <div
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
