@@ -51,7 +51,7 @@ const FotoSamples = () => {
         <div class="sample-wrapper4">
           <div class="sample-foto4">
             <img
-              src="./image/FotoSamples/frontFB.jpg"
+              src="./image/FotoSamples/frontFB2.jpg"
               alt="Sample Foto"
               className="inner-foto"
             ></img>

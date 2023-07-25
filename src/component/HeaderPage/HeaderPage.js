@@ -8,7 +8,7 @@ const HeaderPage = () => {
     <div className="home section">
       <div className="containerHome home__wrapper">
         <img
-          src="./image/MainFoto9.png"
+          src="./image/MainFoto12.png"
           alt="backpack-main"
           class="home__wrapper__main-photo"
         ></img>

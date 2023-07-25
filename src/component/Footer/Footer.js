@@ -32,12 +32,12 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="/privacypolicy"
+                    <Link
+                    to="/privacypolicy"
                       class="footer__about__items__link__text"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/about" class="footer__about__items__link__text">
@@ -75,8 +75,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/*<!-- footer form -->*/}
-            <div class="footer__about__items-form items-form">
+                    <div class="footer__about__items-form items-form">
               <h2 class="footer__about__items__title">Newsletter</h2>
               <div class="form-footer">
                 <form action="#">
@@ -90,8 +89,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/*<!-- footer social -->*/}
-          <div className="footer_copyright">
+                  <div className="footer_copyright">
             <div className="footer_social ">
               <ul className="social__items">
                 <li>
@@ -132,8 +130,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/* <!-- footer copyright -->*/}
-            <div className="footer_content">
+                    <div className="footer_content">
               <p className="text-copyright">
                 Designed and Developed by ©{" "}
                 <a
