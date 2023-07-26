@@ -26,7 +26,7 @@
   width: 250px;
   height: 80px;
   display: flex;
-  z-index: 200;
+  z-index: 3;
 }
 
 .sheme__icon {
@@ -58,6 +58,7 @@
   -webkit-transform: scale(0.9);
   transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
+cursor: pointer;
 }
 
 .icon-HandleBg {
@@ -171,6 +172,9 @@
   top: 87%;
   right: 26%;
 }
+
+
+
 
 @media (max-width: 1360px) {
   .wrapper-block-scheme {
