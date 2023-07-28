@@ -1,7 +1,7 @@
 import About from "../../component/About/About";
 import AboutSlider from "../../component/AboutSlider/AboutSlider";
 import Contact from "../../component/Contact/Contact";
-//import Footer from "../../component/Footer/Footer"
+import Gallery from "../../component/Gallery/Gallery";
 import HeaderPage from "../../component/HeaderPage/HeaderPage";
 
 import "../../styles/fontsProjectFB.scss";
@@ -11,6 +11,7 @@ const Main = () => {
     <div>
       <HeaderPage />
       <About />
+      <Gallery />
       <AboutSlider />
       <Contact />
     </div>

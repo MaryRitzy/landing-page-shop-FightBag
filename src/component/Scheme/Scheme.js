@@ -1,21 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import "./Scheme.scss";
 import "./iconfont.scss";
-import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import * as React from "react";
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const Scheme = () => {
-  const [toggler, setToggler] = useState(false);
-  const [togglerback, setTogglerback] = useState(false);
-  const [togglernet, setTogglernet] = useState(false);
-  const [togglerpocket, setTogglerpocket] = useState(false);
-  const [togglerhandlebg, setTogglerhandlebg] = useState(false);
-  const [togglerwaterno, setTogglerwaterno] = useState(false);
-
-  const lightboxWidth = "98%";
-  const lightboxHeight = "92%";
-  const lightboxTop = "10%";
-  const lightboxLeft = "0.5%";
+  const [toggler, setToggler] = React.useState(false);
+  const [togglerback, setTogglerback] = React.useState(false);
+  const [togglernet, setTogglernet] = React.useState(false);
+  const [togglerpocket, setTogglerpocket] = React.useState(false);
+  const [togglerhandlebg, setTogglerhandlebg] = React.useState(false);
+  const [togglerwaterno, setTogglerwaterno] = React.useState(false);
 
   return (
     <>
@@ -45,7 +46,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-Backpackfront"
-                onClick={() => setToggler(!toggler)}
+                onClick={() => setToggler(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -60,7 +61,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-Backside"
-                onClick={() => setTogglerback(!togglerback)}
+                onClick={() => setTogglerback(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -75,7 +76,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-Airblow"
-                onClick={() => setTogglernet(!togglernet)}
+                onClick={() => setTogglernet(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -92,7 +93,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-Bottlewater"
-                onClick={() => setTogglerpocket(!togglerpocket)}
+                onClick={() => setTogglerpocket(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -100,7 +101,6 @@ const Scheme = () => {
                 Кишеня для
                 <p>пляшки</p>
               </h3>
-
               <p>Потайна кишеня для</p>
               <p>телефону, ключів, капи</p>
             </div>
@@ -110,7 +110,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-HandleBg"
-                onClick={() => setTogglerhandlebg(!togglerhandlebg)}
+                onClick={() => setTogglerhandlebg(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -127,7 +127,7 @@ const Scheme = () => {
             <div className="sheme__icon">
               <div
                 className="icon-WaterNo"
-                onClick={() => setTogglerwaterno(!togglerwaterno)}
+                onClick={() => setTogglerwaterno(true)}
               ></div>
             </div>
             <div className="sheme__text">
@@ -151,123 +151,89 @@ const Scheme = () => {
             </div>
           </div>
         </div>
-        <div>
-          <FsLightbox
-            toggler={toggler}
-            sources={[
-              "./image/FotoGallery/frontMain.jpg",
-              "./image/FotoGallery/section1.jpg",
-              "./image/FotoGallery/section2.jpg",
-              "./image/FotoGallery/section3.jpg",
-              "./image/FotoGallery/section4.jpg",
-              "./image/FotoGallery/section5.jpg",
-              "./image/FotoGallery/net2.jpg",
+        <div className="gallery-lightbox">
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={toggler}
+            close={() => setToggler(false)}
+            slides={[
+              { src: "./image/FotoGallery/frontMain.jpg" },
+              { src: "./image/FotoGallery/section1.jpg" },
+              { src: "./image/FotoGallery/section2.jpg" },
+              { src: "./image/FotoGallery/section4.jpg" },
+              { src: "./image/FotoGallery/section5.jpg" },
+              { src: "./image/FotoGallery/net2.jpg" },
             ]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
+
         <div>
-          <FsLightbox
-            toggler={togglerback}
-            sources={[
-              "./image/FotoGallery/straps0.jpg",
-              "./image/FotoGallery/straps.jpg",
-              "./image/FotoGallery/back.jpg",
-              "./image/FotoGallery/back2.jpg",
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglerback}
+            close={() => setTogglerback(false)}
+            slides={[
+              { src: "./image/FotoGallery/straps0.jpg" },
+              { src: "./image/FotoGallery/straps.jpg" },
+              { src: "./image/FotoGallery/back.jpg" },
+              { src: "./image/FotoGallery/back2.jpg" },
             ]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
         <div>
-          <FsLightbox
-            toggler={togglernet}
-            sources={[
-              "./image/FotoGallery/net3.jpg",
-              "./image/FotoGallery/net2.jpg",
-              "./image/FotoGallery/net1.jpg",
-              "./image/FotoGallery/frontMain.jpg",
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglernet}
+            close={() => setTogglernet(false)}
+            slides={[
+              { src: "./image/FotoGallery/net3.jpg" },
+              { src: "./image/FotoGallery/net2.jpg" },
+              { src: "./image/FotoGallery/net1.jpg" },
+              { src: "./image/FotoGallery/frontMain.jpg" },
             ]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
         <div>
-          <FsLightbox
-            toggler={togglerpocket}
-            sources={[
-              "./image/FotoGallery/pocket1.jpg",
-              "./image/FotoGallery/pocket2.jpg",
-              "./image/FotoGallery/pocket3.jpg",
-              "./image/FotoGallery/pocket4.jpg",
-              "./image/FotoGallery/pocketSide.jpg",
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglerpocket}
+            close={() => setTogglerpocket(false)}
+            slides={[
+              { src: "./image/FotoGallery/pocket1.jpg" },
+              { src: "./image/FotoGallery/pocket2.jpg" },
+              { src: "./image/FotoGallery/pocket3.jpg" },
+              { src: "./image/FotoGallery/pocket4.jpg" },
+              { src: "./image/FotoGallery/pocketSide.jpg" },
             ]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
         <div>
-          <FsLightbox
-            toggler={togglerhandlebg}
-            sources={[
-              "./image/FotoGallery/gallery1.jpg",
-              "./image/FotoGallery/sideTop.jpg",
-              "./image/FotoGallery/accessories3.jpg",
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglerhandlebg}
+            close={() => setTogglerhandlebg(false)}
+            slides={[
+              { src: "./image/FotoGallery/gallery6.jpg" },
+              { src: "./image/FotoGallery/accessories2.jpg" },
+              { src: "./image/FotoGallery/sideTop.jpg" },
+              { src: "./image/FotoGallery/accessories3.jpg" },
+              { src: "./image/FotoGallery/accessories1.jpg" },
             ]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
         <div>
-          <FsLightbox
-            toggler={togglerwaterno}
-            sources={["./image/FotoGallery/waterno.jpg"]}
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglerwaterno}
+            close={() => setTogglerwaterno(false)}
+            slides={[{ src: "./image/FotoGallery/waterno.jpg" }]}
           />
-          <style>{`
-        .fslightbox-container {
-          width: ${lightboxWidth};
-          height: ${lightboxHeight};
-          top: ${lightboxTop};
-          left: ${lightboxLeft}
-        }
-                }
-      `}</style>
         </div>
       </div>
     </>

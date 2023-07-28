@@ -1,0 +1,90 @@
+@import "../../styles/main.scss";
+
+.gallery-wrapper {
+  position: relative;
+  background-color: #26292a;
+  background-image: url("../../img/Bg_gallery2.jpg");
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.911);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0 0 2px 0;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.911);
+  margin-bottom: 2px;
+}
+.gallery-title {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 34px;
+  font-weight: 400;
+  font-family: "Dongle", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+.gallery-container {
+  position: absolute;
+  max-width: 1400px;
+  max-height: 95vh;
+  left: 5%;
+  right: 5%;
+  bottom: 3%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-part {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.bottom-part {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.front-foto {
+  max-width: 460px;
+  max-height: 460px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.804);
+  overflow: hidden;
+  margin: 0;
+}
+
+.small-foto {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.695);
+  overflow: hidden;
+  margin: 0;
+  border: 2px solid $blue;
+  border-radius: 15px;
+  padding: 12px;
+}
+
+.front-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.small-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -35,7 +35,7 @@ const ScrollToTop = () => {
           style={{
             position: 'fixed',
             bottom: '3%',
-            right: '3%',
+            right: '2%',
             display: 'block',
           }}
           className="btn-floating"

@@ -18,7 +18,7 @@ const Footer = () => {
               <div class="items-logo__text">
                 <p>Рюкзаки для чемпіонів</p>
                 <p>Індивідуальний дизайн для спортсменів</p>
-                <p>Вибери собі крутий рюкзак тут</p>
+                <p>Замов собі крутий рюкзак<Link to="/contact" className="order-link">тут</Link></p>
               </div>
             </div>
 
@@ -32,11 +32,8 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <Link
-                    to="/privacypolicy"
-                      class="footer__about__items__link__text"
-                    >
-                      Privacy Policy
+                  <Link to="/gallery" class="footer__about__items__link__text">
+                      Gallery
                     </Link>
                   </li>
                   <li>
@@ -67,10 +64,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="/" class="footer__about__items__link__text">
-                      Terms
-                    </a>
-                  </li>
+                  <Link
+                    to="/privacypolicy"
+                      class="footer__about__items__link__text"
+                    >
+                      Privacy Policy
+                    </Link>
+                                    </li>
                 </ul>
               </div>
             </div>

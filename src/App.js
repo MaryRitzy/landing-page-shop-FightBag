@@ -7,6 +7,7 @@ import Main from "./pages/Main/Main";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy"
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="contact" element={<ContactPage />}></Route>
         <Route path="supportform" element={<SupportForm />}></Route>
         <Route path="privacypolicy" element={<PrivacyPolicy />}></Route>
+        <Route path="gallery" element={<GalleryPage />}></Route>
       </Routes>
       <Footer />
 
