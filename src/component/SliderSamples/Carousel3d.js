@@ -8,7 +8,7 @@ export default function Carousel3d({
   cards,
   offset,
   autorotation = true,
-  rotationInterval = 5000,
+  rotationInterval = 6000,
 }) {
   const table = cards.map((element, index) => {
     return { ...element, index, onClick: () => setGoToSlide(index) };

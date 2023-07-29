@@ -27,6 +27,7 @@ const Scheme = () => {
             className="block-scheme-img"
           ></img>
         </div>
+   
         <div class="diagram__scheme-container">
           <div className="sheme__Backpack-mainIcon icon0">
             <div className="Backpack-mainIcon">
@@ -40,7 +41,6 @@ const Scheme = () => {
               <h3>59 х 26 х 25 см</h3>
             </div>
           </div>
-
           <div className="sheme__items icon1">
             <div className="sheme__icon">
               <div

@@ -132,14 +132,14 @@ const Footer = () => {
             </div>
                     <div className="footer_content">
               <p className="text-copyright">
-                Designed and Developed by ©{" "}
+                Designed and<p className="text-copyright-part2">Developed by</p>
                 <a
                   href="https://www.linkedin.com/in/maryna-atamas-b1a886234/"
                   rel="noopener noreferrer"
                   className="text-copyright-author"
                   target="_blank"
                 >
-                  Atamas
+                   © Atamas
                 </a>{" "}
               </p>
             </div>

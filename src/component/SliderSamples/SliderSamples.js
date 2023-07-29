@@ -17,7 +17,7 @@ const SliderSamples = () => {
         background: "transparent",
       }}
     >
-      <div className="title-slider">Виконані</div>
+      <div className="title-slider">Готові роботи</div>
       <div className="slider-origin" style={{ width: 1200 }}>
         <Carousel3d
           cards={slides.map((slide, index) => ({

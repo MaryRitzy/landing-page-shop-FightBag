@@ -6,20 +6,31 @@ import './SliderSamples.scss'
 
 function Card({ title, image, currentSlide, currentIndex }) {
   const [show, setShown] = useState(false);
+  const [autorotation, setAutorotation] = useState(true);
 
   const styles = useSpring({
-    transform: show ? "scale(1.03)" : "scale(1)",
+    transform: show ? "scale(1.18)" : "scale(1)",
     boxShadow: show
       ? "0 20px 25px rgba(0, 0, 0, 0.25)"
       : "0 2px 10px rgba(0, 0, 0, 0.08)",
   });
 
+  const handleMouseEnter = () => {
+    setShown(true);
+    setAutorotation(false); 
+  };
+
+  const handleMouseLeave = () => {
+    setShown(false);
+    setAutorotation(true); 
+  };
+
 
   return (
     <animated.div
       style={{ ...styles, height: "fit-content" }}
-      onMouseEnter={() => setShown(true)}
-      onMouseLeave={() => setShown(false)}
+        onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <div
         style={{
@@ -62,10 +73,12 @@ function Card({ title, image, currentSlide, currentIndex }) {
           {title && (
             <div
               style={{
-                marginTop: 24,
-                fontWeight: 600,
-                fontSize: 28,
-                lineHeight: "150%",
+                marginTop: 22,
+                fontWeight: 500,
+                fontFamily:  "Dongle , sans-serif",
+                fontSize: 36,
+                letterSpacing: "0.07rem", 
+                lineHeight: "100%",
                 color: "#FDFDFD",
               }}
             >

@@ -73,12 +73,15 @@
 }
 
 .home-btn__link {
+  font-weight: 400;
+  font-family: "Dongle", sans-serif;
+  letter-spacing: 0.07rem;
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
-  letter-spacing: 0.05rem;
+  font-size: 42px;
   color: #dee7ebec;
   gap: 20px;
+  padding: 0px;
 }
 
 .home__btn {

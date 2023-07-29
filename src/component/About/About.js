@@ -7,7 +7,19 @@ const About = () => {
   return (
     <>
       <section className="about__wrapper section">
-        <div className="about__container containerAbout">
+              <div className="about__container containerAbout">
+              <div className="sheme-about-pointer icon0a">
+            <div className="sheme-pointer-title" >
+            About
+            </div>
+            <div> 
+            <img
+              src="./image/cursorF.svg"
+              alt="pointer"
+              className="sheme-pointer-icon"
+            ></img>
+            </div>
+          </div>
           <div className="container__halfpageLeft">
             <div className="container__halfpage__wrapperLeft">
              

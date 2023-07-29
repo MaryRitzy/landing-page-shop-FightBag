@@ -32,7 +32,7 @@ const HeaderPage = () => {
             <img
               src="./image/arrow-blue.svg"
               alt="arrow"
-              class="home-btn__icon-arrow"
+              className="home-btn__icon-arrow"
             ></img>{" "}
           </a>
         </button>
