@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { useSpring, animated } from "react-spring";
 import SquareBorder1 from "../../assets/FotosSlider/SquareBorder1.png";
 import './SliderSamples.scss'
@@ -14,6 +14,19 @@ function Card({ title, image, currentSlide, currentIndex }) {
       ? "0 20px 25px rgba(0, 0, 0, 0.25)"
       : "0 2px 10px rgba(0, 0, 0, 0.08)",
   });
+
+
+  useEffect(() => {
+    let intervalId;
+
+    if (autorotation) {
+      intervalId = setInterval(() => {
+            }, 3000); 
+    }
+
+    return () => clearInterval(intervalId);
+  }, [autorotation, currentIndex]);
+
 
   const handleMouseEnter = () => {
     setShown(true);
