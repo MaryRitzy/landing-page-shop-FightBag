@@ -18,7 +18,12 @@ const Footer = () => {
               <div class="items-logo__text">
                 <p>Рюкзаки для чемпіонів</p>
                 <p>Індивідуальний дизайн для спортсменів</p>
-                <p>Замов собі крутий рюкзак<Link to="/contact" className="order-link">тут</Link></p>
+                <p>
+                  Замов собі крутий рюкзак
+                  <Link to="/contact" className="order-link">
+                    тут
+                  </Link>
+                </p>
               </div>
             </div>
 
@@ -32,7 +37,10 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                  <Link to="/gallery" class="footer__about__items__link__text">
+                    <Link
+                      to="/gallery"
+                      class="footer__about__items__link__text"
+                    >
                       Gallery
                     </Link>
                   </li>
@@ -64,18 +72,18 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                  <Link
-                    to="/privacypolicy"
+                    <Link
+                      to="/privacypolicy"
                       class="footer__about__items__link__text"
                     >
                       Privacy Policy
                     </Link>
-                                    </li>
+                  </li>
                 </ul>
               </div>
             </div>
 
-                    <div class="footer__about__items-form items-form">
+            <div class="footer__about__items-form items-form">
               <h2 class="footer__about__items__title">Newsletter</h2>
               <div class="form-footer">
                 <form action="#">
@@ -89,7 +97,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-                  <div className="footer_copyright">
+          <div className="footer_copyright">
             <div className="footer_social ">
               <ul className="social__items">
                 <li>
@@ -130,18 +138,18 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-                    <div className="footer_content">
-              <p className="text-copyright">
-                Designed and<p className="text-copyright-part2">Developed by</p>
-                <a
-                  href="https://www.linkedin.com/in/maryna-atamas-b1a886234/"
-                  rel="noopener noreferrer"
-                  className="text-copyright-author"
-                  target="_blank"
-                >
-                   © Atamas
-                </a>{" "}
-              </p>
+            <div className="footer_content">
+              <p className="text-copyright">Designed and</p>
+              <p className="text-copyright-part2">Developed</p>
+              <a
+                href="https://www.linkedin.com/in/maryna-atamas-b1a886234/"
+                rel="noopener noreferrer"
+                className="text-copyright-author"
+                target="_blank"
+              >
+                ©Atamas
+              </a>{" "}
+              
             </div>
           </div>
         </div>

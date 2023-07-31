@@ -46,7 +46,14 @@
   @media (max-width: 420px) {
     left: 33%;
     bottom: 0;
-    top: 84%;
+    top: 86%;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+  @media (max-width: 300px) {
+    top: 86%;
+    left: 3%;
+    bottom: 0;
     transform: translateY(60%);
     z-index: 1010;
   }
@@ -65,8 +72,15 @@
     z-index: 1010;
   }
   @media (max-width: 420px) {
-    top: 84%;
+    top: 86%;
     right: 33%;
+    bottom: 0;
+    transform: translateY(60%);
+    z-index: 1010;
+  }
+  @media (max-width: 300px) {
+    top: 86%;
+    right: 3%;
     bottom: 0;
     transform: translateY(60%);
     z-index: 1010;
@@ -98,6 +112,12 @@
     padding: 1.5rem;
     max-width: 0.2rem;
     max-height: 0.2rem;
+  }
+  @media (max-width: 300px) {
+    font-size: 1rem;
+    padding: 1.15rem;
+    max-width: 0.13rem;
+    max-height: 0.13rem;
   }
 }
 

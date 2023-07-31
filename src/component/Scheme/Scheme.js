@@ -10,6 +10,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const Scheme = () => {
+  const [togglermainfront, setTogglermainfront] = React.useState(false);
   const [toggler, setToggler] = React.useState(false);
   const [togglerback, setTogglerback] = React.useState(false);
   const [togglernet, setTogglernet] = React.useState(false);
@@ -30,8 +31,9 @@ const Scheme = () => {
    
         <div class="diagram__scheme-container">
           <div className="sheme__Backpack-mainIcon icon0">
-            <div className="Backpack-mainIcon">
+            <div className="Backpack-mainIcon" >
               <img
+              onClick={() => setTogglermainfront(true)}
                 src="./image/iconsSheme/BackpackMainSize.svg"
                 alt="icon"
                 className="mainIconSize"
@@ -151,6 +153,15 @@ const Scheme = () => {
           </div>
         </div>
         <div className="gallery-lightbox">
+        <div>
+          <Lightbox
+            styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
+            plugins={[Fullscreen, Thumbnails, Zoom]}
+            open={togglermainfront}
+            close={() => setTogglermainfront(false)}
+            slides={[{ src: "./image/FotoGallery/frontMain.jpg" },  { src: "./image/FotoGallery/pocketSide.jpg" }, { src: "./image/FotoGallery/back2.jpg" }]}
+          />
+        </div>
           <Lightbox
             styles={{ root: { "--yarl__color_backdrop": "rgba(0, 0, 0, .9)" } }}
             plugins={[Fullscreen, Thumbnails, Zoom]}

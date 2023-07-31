@@ -92,8 +92,9 @@ const Gallery = () => {
               ></img>
             </div>
 
-            <div className="small-foto">
+            <div className="last-mini-poto">
               <img
+             
                 src="./image/FotoGallery/straps0_mini.jpg"
                 alt="small-foto"
                 onClick={() => handleClick(8)}

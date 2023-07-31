@@ -105,7 +105,7 @@
     position: absolute;
     top: 0;
     right: 6%;
-    height: 85%;
+    height: 100%;
     width: auto;
     padding-left: 10px;
   }
@@ -120,6 +120,56 @@
     left: 5%;
     top: 19%;
     height: auto;
-    max-width: 300px;
+    max-width: 250px;
   }
 }
+
+
+@media (max-width: 320px) {
+  .home__wrapper__main-photo {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    height: 100%;
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .home__btn {
+    max-width: 400px;
+    top: 80%;
+    left: 15%;
+  }
+
+  .home__wrapper__inscription-logo {
+    left: 5%;
+    top: 21%;
+    height: auto;
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 280px) {
+  .home__wrapper__main-photo {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    height: 100%;
+    width: auto;
+    padding-left: 10px;
+  }
+
+  .home__btn {
+    max-width: 270px;
+    top: 80%;
+    left: 5%;
+  }
+
+  .home__wrapper__inscription-logo {
+    left: 5%;
+    top: 21%;
+    height: auto;
+    max-width: 200px;
+  }
+}
+

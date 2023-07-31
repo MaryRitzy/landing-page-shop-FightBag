@@ -41,7 +41,6 @@
   flex: 4;
   display: flex;
   justify-content: space-between;
-
   margin-bottom: 20px;
   gap: 20px;
 }
@@ -61,7 +60,7 @@
   overflow: hidden;
   margin: 0;
 }
-
+.last-mini-poto,
 .small-foto {
   max-width: 180px;
   max-height: 180px;
@@ -81,10 +80,88 @@
   cursor: pointer;
 }
 
+.last-mini-poto img,
 .small-foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-title {
+    text-align: center;
+  }
+  .last-mini-poto,
+  .small-foto {
+    padding: 9px;
+  }
+
+  @media screen and (max-width: 545px) {
+    .last-mini-poto,
+    .small-foto {
+      padding: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .last-mini-poto,
+  .small-foto {
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .front-foto img[src="./image/FotoGallery/gallery4e.jpg"],
+  .last-mini-poto,
+  .last-mini-poto img[src="./image/FotoGallery/straps0_mini.jpg"] {
+    display: none;
+  }
+  .last-mini-poto {
+    display: none;
+  }
+  }
+
+
+@media screen and (max-width: 440px) {
+  .front-foto img[src="./image/FotoGallery/gallery2.jpg"],
+  .front-foto img[src="./image/FotoGallery/gallery4e.jpg"],
+  .last-mini-poto,
+  .last-mini-poto img[src="./image/FotoGallery/straps0_mini.jpg"] {
+    display: none;
+  }
+  .last-mini-poto {
+    display: none;
+  }
+  .center-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-part {
+    margin-bottom: 10px;
+  }
+
+  .front-foto img[src="./image/FotoGallery/gallery6c.jpg"] {
+    display: block;
+  }
+
+  .bottom-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+  .gallery-title {
+    text-align: center;
+  }
+
+  .small-foto {
+    flex-basis: calc(33.33% - 10px);
+    padding: 10px;
+  }
 }

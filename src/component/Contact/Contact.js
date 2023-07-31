@@ -14,12 +14,12 @@ const Contact = () => {
           ></img>
           <div className="contact__title">Контакти</div>
           <div className="contact__items">
-            <div className="contact__items__station">
+            <div className="contact__items__station1">
               <div className="station__contact-icon icon-mobile"></div>
               <div className="station__contact-title">телефони</div>
               <div className="station__contact-text">+380 93 799 2349</div>
             </div>
-            <div className="contact__items__station">
+            <div className="contact__items__station2">
               <div className="station__contact-icon icon-sms"></div>
               <div className="station__contact-title">месенджери</div>
               <div className="station__contact-text">
@@ -33,7 +33,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="contact__items__station">
+            <div className="contact__items__station3">
               <div className="station__contact-icon icon-location-map"></div>
               <div className="station__contact-title">адреса</div>
               <div className="station__contact-text">
@@ -41,7 +41,7 @@ const Contact = () => {
                 18000
               </div>
             </div>
-            <div className="contact__items__station">
+            <div className="contact__items__station4">
               <div className="station__contact-icon icon-mail2"></div>
               <div className="station__contact-title">email</div>
               <div className="station__contact-text">fightbag.ua@gmail.com</div>

@@ -46,7 +46,7 @@
   font-size: 42px;
   text-align: center;
 }
-
+.mainIconSize:hover,
 .icon-PictureDis:hover,
 .icon-HandleBg:hover,
 .icon-Backpackfront:hover,
@@ -181,25 +181,60 @@
   right: 26%;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1220px) {
   .wrapper-block-scheme {
     width: 550px;
-    height: 560px;
+    height: 540px;
   }
   .block-scheme-img {
     width: 100%;
     height: 99%;
   }
-}
-
-@media (max-width: 1250px) {
-  .wrapper-block-scheme {
-    width: 540px;
-    height: 520px;
+  .sheme__items {
+    width: 220px;
+    height: 60px;
   }
-  .block-scheme-img {
-    width: 100%;
-    height: 97%;
+  .sheme__text {
+    width: 75%;
+    font-size: 10px;
+    padding-bottom: 7px;
+  }
+
+  .sheme__text h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .icon0 {
+    top: 32%;
+    right: 57%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 27%;
+  }
+  .icon2 {
+    top: 15.5%;
+    right: 8.5%;
+  }
+  .icon3 {
+    top: 30.5%;
+    right: 1%;
+  }
+  .icon4 {
+    top: 44.5%;
+    right: -0.5%;
+  }
+  .icon5 {
+    bottom: 30.5%;
+    right: 1.3%;
+  }
+  .icon6 {
+    bottom: 15.5%;
+    right: 9.5%;
+  }
+  .icon7 {
+    top: 87.5%;
+    right: 27%;
   }
 }
 
@@ -265,6 +300,11 @@
     width: 500px;
     height: 500px;
   }
+  .block-scheme-img {
+    width: 100%;
+    height: 99%;
+  }
+
   .Backpack-mainIcon {
     width: 110px;
     height: 110px;
@@ -296,10 +336,288 @@
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 948px) {
   .wrapper-block-scheme {
     width: 490px;
     height: 490px;
+  }
+  .block-scheme-img {
+    width: 100%;
+    height: 99%;
+  }
+
+  .Backpack-mainIcon {
+    width: 110px;
+    height: 110px;
+  }
+  .icon0 {
+    top: 28.5%;
+    right: 57%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 23%;
+  }
+  .icon2 {
+    top: 15.5%;
+    right: 4.5%;
+  }
+  .icon-HandleBg {
+    font-size: 20px;
+  }
+  .icon3 {
+    top: 29.5%;
+    right: -3%;
+  }
+  .icon5 {
+    bottom: 30%;
+    right: -2.9%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 44%;
+    right: -4.7%;
+  }
+  .icon6 {
+    bottom: 15%;
+    right: 5%;
+  }
+  .icon7 {
+    top: 87.5%;
+    right: 23%;
+  }
+  .icon-Bottlewater,
+  .icon-Airblow,
+  .icon-WaterNo {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 880px) {
+  .wrapper-block-scheme {
+    width: 490px;
+    height: 490px;
+    left: -2%;
+  }
+  .block-scheme-img {
+    width: 98%;
+    height: 98%;
+  }
+  .sheme__icon {
+    margin-right: 6px;
+    width: 23%;
+  }
+  .Backpack-mainIcon {
+    width: 98px;
+    height: 98px;
+  }
+  .icon0 {
+    top: 28.5%;
+    right: 57%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 25%;
+  }
+  .icon2 {
+    top: 15.5%;
+    right: 7.5%;
+  }
+  .icon-HandleBg {
+    font-size: 20px;
+  }
+  .icon3 {
+    top: 29.5%;
+    right: 0%;
+  }
+  .icon5 {
+    bottom: 30%;
+    right: 0.1%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 44%;
+    right: -1.5%;
+  }
+  .icon6 {
+    bottom: 15%;
+    right: 8%;
+  }
+  .icon7 {
+    top: 86.5%;
+    right: 26%;
+  }
+}
+
+@media (max-width: 840px) {
+  .wrapper-block-scheme {
+    width: 490px;
+    height: 490px;
+    left: -5%;
+  }
+  .block-scheme-img {
+    width: 98%;
+    height: 98%;
+  }
+  .sheme__icon {
+    margin-right: 6px;
+    width: 23%;
+  }
+  .Backpack-mainIcon {
+    width: 98px;
+    height: 98px;
+  }
+  .icon0 {
+    top: 27.5%;
+    right: 62%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 28%;
+  }
+  .icon2 {
+    top: 15.5%;
+    right: 10.5%;
+  }
+
+  .icon-HandleBg {
+    font-size: 20px;
+  }
+  .icon3 {
+    top: 29.5%;
+    right: 3%;
+  }
+  .icon5 {
+    bottom: 30%;
+    right: 3.1%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 44%;
+    right: 0.5%;
+  }
+  .icon6 {
+    bottom: 16%;
+    right: 11.5%;
+  }
+  .icon7 {
+    top: 86%;
+    right: 29%;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper-block-scheme {
+    width: 480px;
+    height: 480px;
+    left: -10%;
+  }
+  .block-scheme-img {
+    width: 97%;
+    height: 97%;
+  }
+  .sheme__icon {
+    margin-right: 6px;
+    width: 23%;
+  }
+  .Backpack-mainIcon {
+    width: 98px;
+    height: 98px;
+  }
+  .icon0 {
+    top: 26.5%;
+    right: 67%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 33%;
+  }
+  .icon2 {
+    top: 14.5%;
+    right: 15%;
+  }
+
+  .icon-HandleBg {
+    font-size: 20px;
+  }
+  .icon3 {
+    top: 29%;
+    right: 8.5%;
+  }
+  .icon5 {
+    bottom: 31%;
+    right: 8%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 43%;
+    right: 5.5%;
+  }
+  .icon6 {
+    bottom: 16%;
+    right: 16%;
+  }
+  .icon7 {
+    top: 85%;
+    right: 33%;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper-block-scheme {
+    width: 480px;
+    height: 480px;
+    left: -16%;
+  }
+
+  .block-scheme-img {
+    width: 97%;
+    height: 97%;
+  }
+  .sheme__icon {
+    margin-right: 6px;
+    width: 23%;
+  }
+  .Backpack-mainIcon {
+    width: 98px;
+    height: 98px;
+  }
+  .icon0 {
+    top: 26.5%;
+    right: 73%;
+  }
+  .icon1 {
+    top: 1%;
+    right: 39%;
+  }
+  .icon2 {
+    top: 14.5%;
+    right: 21%;
+  }
+
+  .icon-HandleBg {
+    font-size: 20px;
+  }
+  .icon3 {
+    top: 29%;
+    right: 14.5%;
+  }
+  .icon5 {
+    bottom: 30.5%;
+    right: 14%;
+  }
+  .icon4 {
+    position: absolute;
+    top: 43%;
+    right: 11.5%;
+  }
+  .icon6 {
+    bottom: 16%;
+    right: 22%;
+  }
+  .icon7 {
+    top: 85%;
+    right: 39%;
   }
 }
 
@@ -308,148 +626,223 @@
     top: 50%;
     max-width: 550px;
     max-height: 510px;
-    margin-left: 5%;
+    left: 13%;
+  }
+  .block-scheme-img {
+    width: 100%;
+    height: 100%;
   }
   .sheme__items {
     width: 230px;
     height: 80px;
   }
+  .icon0a {
+    left: 18%;
+  }
   .icon0 {
     top: 28%;
-    right: 51%;
+    right: 43%;
   }
   .icon1 {
     top: -1%;
-    right: 16%;
+    right: 7%;
   }
   .icon2 {
     top: 13.5%;
-    right: -2%;
+    right: -11%;
   }
   .icon3 {
     top: 28%;
-    right: -9.5%;
+    right: -18.5%;
   }
   .icon4 {
-    top: 43%;
-    right: -12%;
+    top: 42%;
+    right: -21%;
   }
   .icon5 {
     bottom: 27%;
-    right: -10%;
+    right: -19%;
   }
   .icon6 {
-    bottom: 13%;
-    right: -1.5%;
+    bottom: 12%;
+    right: -10.5%;
   }
   .icon7 {
     top: 86%;
-    right: 16.5%;
+    right: 7.5%;
   }
 
   .sheme__icon {
     margin-right: 6px;
+    width: 23%;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper-block-scheme {
+    top: 50%;
+    max-width: 540px;
+    max-height: 510px;
+    left: 2%;
+  }
+  .block-scheme-img {
+    width: 100%;
+    height: 100%;
+  }
+  .sheme__items {
+    width: 230px;
+    height: 80px;
+  }
+  .icon0a {
+    left: 12%;
+  }
+  .icon0 {
+    top: 28%;
+    right: 54%;
+  }
+  .icon1 {
+    top: -1%;
+    right: 18%;
+  }
+  .icon2 {
+    top: 13.5%;
+    right: 0%;
+  }
+  .icon3 {
+    top: 28%;
+    right: -7.5%;
+  }
+  .icon4 {
+    top: 42%;
+    right: -10%;
+  }
+  .icon5 {
+    bottom: 27%;
+    right: -8%;
+  }
+  .icon6 {
+    bottom: 12%;
+    right: 0.5%;
+  }
+  .icon7 {
+    top: 86%;
+    right: 18.5%;
+  }
+
+  .sheme__icon {
+    margin-right: 5px;
+    width: 23%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper-block-scheme {
+    top: 50%;
+    max-width: 540px;
+    max-height: 510px;
+    left: 3%;
+  }
+  .block-scheme-img {
+    width: 100%;
+    height: 100%;
+  }
+  .sheme__items {
+    width: 220px;
+    height: 80px;
+  }
+  .icon0a {
+    left: 12%;
+  }
+  .icon0 {
+    top: 28%;
+    right: 53%;
+  }
+  .icon1 {
+    top: -1%;
+    right: 19%;
+  }
+  .icon2 {
+    top: 13.5%;
+    right: 0%;
+  }
+  .icon3 {
+    top: 28%;
+    right: -7%;
+  }
+  .icon4 {
+    top: 42%;
+    right: -9%;
+  }
+
+  .icon5 {
+    bottom: 27%;
+    right: -7%;
+  }
+  .icon6 {
+    bottom: 12%;
+    right: 1.5%;
+  }
+  .icon7 {
+    top: 86%;
+    right: 19.5%;
+  }
+
+  .sheme__icon {
+    margin-right: 4px;
     width: 23%;
   }
 }
 
 @media (max-width: 550px) {
   .wrapper-block-scheme {
-    width: 490px;
-    height: 500px;
-    margin-left: 0;
+    width: 442px;
+    height: 481px;
+    margin-left: 0%;
+    left: -1%;
   }
+
   .sheme__items {
     width: 230px;
     height: 70px;
   }
-
+  .icon0a {
+    left: 6%;
+  }
   .icon0 {
     top: 28%;
     right: 56%;
   }
   .icon1 {
-    top: -1%;
-    right: 20%;
+    top: 0%;
+    right: 18%;
   }
   .icon2 {
-    top: 13.5%;
-    right: 1%;
+    top: 14.5%;
+    right: -1%;
   }
   .icon3 {
-    top: 28%;
-    right: -6.5%;
-  }
-  .icon4 {
-    top: 42%;
-    right: -8%;
-  }
-  .icon5 {
-    bottom: 27%;
-    right: -10%;
-  }
-  .icon5 {
-    bottom: 27%;
-    right: -6%;
-  }
-  .icon7 {
-    top: 86%;
-    right: 16.5%;
-  }
-
-  .sheme__icon {
-    margin-right: 6px;
-    width: 23%;
-  }
-}
-
-@media (max-width: 500px) {
-  .wrapper-block-scheme {
-    width: 442px;
-    height: 481px;
-    margin-left: 0%;
-  }
-
-  .sheme__items {
-    width: 230px;
-    height: 70px;
-  }
-
-  .icon0 {
-    top: 28%;
-    right: 51%;
-  }
-  .icon1 {
-    top: -1%;
-    right: 16%;
-  }
-  .icon2 {
-    top: 13.5%;
-    right: -2%;
-  }
-  .icon3 {
-    top: 28%;
-    right: -9.5%;
+    top: 29%;
+    right: -8.5%;
   }
   .icon4 {
     top: 43%;
-    right: -12%;
+    right: -10%;
   }
   .icon5 {
-    bottom: 27%;
-    right: -10%;
+    bottom: 28%;
+    right: -9%;
   }
   .icon6 {
     bottom: 13%;
-    right: -1.5%;
+    right: -0.5%;
   }
   .icon7 {
-    top: 86%;
-    right: 16.5%;
+    top: 87%;
+    right: 17.5%;
   }
 
   .sheme__icon {
-    margin-right: 6px;
+    margin-right: 4px;
     width: 23%;
   }
 }
@@ -459,7 +852,9 @@
   .wrapper-block-scheme {
     display: none;
   }
-
+  .icon0a {
+    left: 39%;
+  }
   .diagram {
     position: relative;
     width: 100vw;
@@ -479,18 +874,19 @@
     display: flex;
     flex-direction: row;
     width: 250px;
-    height: 70px;
+    height: 65px;
   }
-
+  
   .sheme__items {
     position: static;
     display: flex;
     flex-direction: row;
     width: 250px;
-    height: 70px;
+    height: 65px;
   }
   .Backpack-mainIcon {
     width: 25%;
+    margin-bottom: 0px;
   }
   .Backpack-mainIcon img {
     width: 78%;
@@ -517,7 +913,7 @@
     font-size: 12px;
     color: white;
     font-family: "Sofia Sans", sans-serif;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
   }
 
   .icon-Bottlewater,
@@ -554,7 +950,6 @@
 
   .icon-PictureDis {
     font-size: 24px;
-    position: absolute;
     display: flex;
     border: 2px solid $blue;
     border-radius: 50%;
