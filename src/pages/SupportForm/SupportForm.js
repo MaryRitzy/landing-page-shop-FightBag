@@ -59,7 +59,7 @@ const SupportForm = () => {
             required
           ></input>
           <textarea
-            className="form-support__items"
+            className="form-support__items__textarea"
             name="message"
             placeholder="Чекаєм Ваше запитання.."
             cols="63"
