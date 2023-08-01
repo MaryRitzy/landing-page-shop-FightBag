@@ -17,6 +17,9 @@ const HeaderPage = () => {
           alt="lines2"
           class="home__wrapper__lines-right"
         ></img>
+        <div class="items-home__logo">
+                <img src="./image/FB_logo12.svg" alt=""></img>
+              </div>
         <img
           src="./image/inscription_logo.svg"
           alt="inscription_logo"
