@@ -19,7 +19,7 @@ $blue: #00ffff;
   display: inline-block;
   text-align: center;
   overflow: hidden;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   background-image: linear-gradient(
     to right,
     #26292a 0%,
@@ -27,7 +27,6 @@ $blue: #00ffff;
     #364145 100%
   );
   color: #18191aec;
-  padding: 10px 30px 10px 30px;
   font-family: "Sofia Sans", sans-serif;
   border: 2px solid #00ffff;
   transition: 0.5s;

@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="container-navbar">
-        <ul className="nav-list">
+             <ul className="nav-list">
           <li className="nav-list__item">
             <Link
               to="/"

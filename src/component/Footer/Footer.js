@@ -13,7 +13,7 @@ const Footer = () => {
           <div class="footer__about">
             <div class="footer__about__items-logo items-logo">
               <div class="items-logo__logo">
-                <img src="./image/FB_logo14.svg" alt=""></img>
+                <img src="./image/LogoFB_Lux.svg" alt=""></img>
               </div>
               <div class="items-logo__text">
                 <p>Рюкзаки для чемпіонів</p>

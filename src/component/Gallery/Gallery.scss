@@ -125,6 +125,11 @@
   }
 
 
+
+
+
+
+
 @media screen and (max-width: 440px) {
   .front-foto img[src="./image/FotoGallery/gallery2.jpg"],
   .front-foto img[src="./image/FotoGallery/gallery4e.jpg"],
@@ -165,3 +170,15 @@
     padding: 10px;
   }
 }
+//For Iphone 14 Pro: 390 pixels width 844 pixels height (aprox.)
+@media only screen 
+and (device-width: 428px) 
+and (device-height: 926px) 
+and (-webkit-device-pixel-ratio: 3) { }
+
+//phone Pro 14 MAX: 428 pixels width 926 pixels height
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { }
+
